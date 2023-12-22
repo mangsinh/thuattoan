@@ -3,12 +3,17 @@
 int main() {
     int n;
     double sum = 0;
-    printf("Tính tổng phân số từ 1 đến? -> ");
+    printf("Nhap n -> ");
     scanf("%d", &n);
 
-    for (int i=1; i<=n; i++) {
-        sum += 1.0 / i;
+    for (int i=0; i<n; i++) {
+        sum += 1.0 / (i+1);
     }
 
-    printf("Tổng phân số %d số nguyên đầu tiên -> %.1f\n", n, sum);
+    printf("Tong 1/1 + 1/2 + ... + 1/%d -> %.1f\n", n, sum);
 }
+
+/*
+input: 3
+output: 1 + 0.5 + 0.3 = 0.8
+*/

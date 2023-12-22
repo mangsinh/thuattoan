@@ -3,12 +3,17 @@
 int main() {
     int n;
     int sum = 0;
-    printf("Tính tổng luỹ thừa từ 1 đến? -> ");
+    printf("Nhap n -> ");
     scanf("%d", &n);
 
-    for (int i=0; i<=n; i++) {
-        sum += i * i;
+    for (int i=0; i<n+1; i++) {
+        sum += ((i+1) * (i+1));
     }
 
-    printf("Tổng luỹ thừa %d số nguyên đầu tiên -> %d\n", n, sum);
+    printf("Tong 1*1 + 2*2 + ... + %d*%d -> %d\n", n, n, sum);
 }
+
+/*
+input: 3
+output: 1 + 2*2 + 3*3 =  14
+*/
